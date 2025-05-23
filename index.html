@@ -55,6 +55,35 @@
             padding: 10px;
             margin: 10px 0;
             background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        .produto img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 1px solid #8b4513;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .image-gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #a0522d;
+            border-radius: 5px;
+        }
+        .section-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            margin: 15px 0;
+            border: 5px solid #8b4513;
         }
     </style>
 </head>
@@ -77,32 +106,58 @@
     <div class="container">
         <section id="sobre">
             <h2>Sobre a Feira do Melado</h2>
+            <img src="sobre-feira.jpg" alt="Vista aérea da Feira do Melado" class="section-image">
             <p>A Feira do Melado é um dos eventos mais tradicionais de Capanema, Paraná, celebrando a cultura local e a produção artesanal de melado, rapadura e outros derivados da cana-de-açúcar.</p>
             <p>Realizada anualmente, a feira reúne produtores rurais, artesãos e visitantes de toda a região para celebrar essa doce tradição que faz parte da história do município.</p>
+            
+            <div class="image-gallery">
+                <img src="tradicao1.jpg" alt="Produção artesanal de melado">
+                <img src="tradicao2.jpg" alt="Produtores locais">
+                <img src="tradicao3.jpg" alt="Cana-de-açúcar">
+                <img src="tradicao4.jpg" alt="Visitantes na feira">
+            </div>
         </section>
 
         <section id="produtos">
             <h2>Produtos Típicos</h2>
+            <img src="produtos-destaque.jpg" alt="Variedade de produtos da feira" class="section-image">
+            
             <div class="produto">
-                <h3>Melado Puro</h3>
-                <p>O tradicional melado artesanal, produzido de forma cuidadosa pelos produtores locais.</p>
+                <img src="melado.jpg" alt="Melado artesanal">
+                <div>
+                    <h3>Melado Puro</h3>
+                    <p>O tradicional melado artesanal, produzido de forma cuidadosa pelos produtores locais.</p>
+                </div>
             </div>
+            
             <div class="produto">
-                <h3>Rapadura</h3>
-                <p>Nos sabores tradicional, com amendoim ou coco.</p>
+                <img src="rapadura.jpg" alt="Rapadura caseira">
+                <div>
+                    <h3>Rapadura</h3>
+                    <p>Nos sabores tradicional, com amendoim ou coco.</p>
+                </div>
             </div>
+            
             <div class="produto">
-                <h3>Cachaça Artesanal</h3>
-                <p>Produzida em alambiques locais com técnicas tradicionais.</p>
+                <img src="cachaca.jpg" alt="Cachaça artesanal">
+                <div>
+                    <h3>Cachaça Artesanal</h3>
+                    <p>Produzida em alambiques locais com técnicas tradicionais.</p>
+                </div>
             </div>
+            
             <div class="produto">
-                <h3>Doces Caseiros</h3>
-                <p>Diversos doces produzidos com melado e outros ingredientes regionais.</p>
+                <img src="doces.jpg" alt="Doces caseiros">
+                <div>
+                    <h3>Doces Caseiros</h3>
+                    <p>Diversos doces produzidos com melado e outros ingredientes regionais.</p>
+                </div>
             </div>
         </section>
 
         <section id="programacao">
             <h2>Programação Cultural</h2>
+            <img src="programacao.jpg" alt="Apresentações culturais" class="section-image">
             <p>A feira conta com:</p>
             <ul>
                 <li>Apresentações folclóricas</li>
@@ -112,25 +167,45 @@
                 <li>Concurso do melhor melado</li>
                 <li>Gastronomia local</li>
             </ul>
+            
+            <div class="image-gallery">
+                <img src="danca1.jpg" alt="Grupo de dança">
+                <img src="musica1.jpg" alt="Músicos regionais">
+                <img src="concurso.jpg" alt="Concurso do melado">
+                <img src="gastronomia.jpg" alt="Pratos típicos">
+            </div>
         </section>
 
         <section id="localizacao">
             <h2>Como Chegar</h2>
+            <img src="mapa-capanema.jpg" alt="Mapa de Capanema" class="section-image">
             <p>A Feira do Melado acontece no Parque de Exposições de Capanema, Paraná.</p>
             <p>Endereço: Rua Exemplo, 123 - Centro, Capanema - PR</p>
-            <!-- Inserir mapa aqui -->
+            <!-- Espaço para mapa interativo -->
+            <img src="local-feira.jpg" alt="Entrada da feira" style="width:100%; margin-top:15px;">
         </section>
 
         <section id="contato">
             <h2>Contato</h2>
+            <img src="organizadores.jpg" alt="Equipe organizadora" class="section-image">
             <p>Prefeitura Municipal de Capanema</p>
             <p>Telefone: (46) XXXX-XXXX</p>
             <p>Email: feiradomelado@capanema.pr.gov.br</p>
+            
+            <div class="image-gallery">
+                <img src="prefeitura.jpg" alt="Prefeitura de Capanema">
+                <img src="secretaria.jpg" alt="Secretaria de Turismo">
+                <img src="atendimento.jpg" alt="Atendimento ao público">
+            </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2023 Feira do Melado - Capanema/PR | Todos os direitos reservados</p>
+        <div>
+            <img src="logo-capanema.png" alt="Logo Capanema" style="height:50px; margin:10px;">
+            <img src="logo-turismo.png" alt="Logo Turismo" style="height:50px; margin:10px;">
+        </div>
     </footer>
 </body>
 </html>
